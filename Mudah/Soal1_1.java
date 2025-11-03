@@ -20,7 +20,6 @@ public static void main(String[] args) {
         tinggi = input.nextInt();
         
         System.out.println("==========================");
-        System.out.println();
         System.out.print("Masukkan berat barang: ");
         berat = input.nextInt();
         
@@ -29,7 +28,6 @@ public static void main(String[] args) {
         
         //Menghitung jarak tempuh
         System.out.println("==========================");
-        System.out.println();
         System.out.print("Masukkan jarak tempuh: ");
         jarak = input.nextInt();
         
@@ -39,23 +37,26 @@ public static void main(String[] args) {
             hargajarak = berat * 6000;
         }
 
-        if (volume >= 100) {
-            pajakvolume = 50000;
-        }else{
-            pajakvolume = 0;
-        }
-
-        Biaya = pajakvolume + hargajarak;
-
+        
         //Hasil
-        System.out.println("=========================================");
+        System.out.println("==========================");
         System.out.println("Hasil jarak tempuh anda: " + jarak + "km");
         System.out.println("Total berat barang anda: " + berat + "kg");
         System.out.println("Hasil Volume anda: " + volume + "cm3");
         System.out.println("=========================================");
         System.out.println("Harga Jarak: " + "Rp."+ hargajarak );
+        
+        if (volume >= 100) {
+            System.out.println("Mendapatkan Rp.50.000 karena Volume melebihi 100 cm3");
+            pajakvolume = 50000;
+        }else{
+            pajakvolume = 0;
+        }
+        
+        System.out.println("=========================================");
+        Biaya = pajakvolume + hargajarak;
         System.out.println("Hasil total yang anda harus bayar: " + "Rp."+ Biaya );
-
+        
         input.close();
     }
 }

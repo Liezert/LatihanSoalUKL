@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class Soal2_2 {
     public static void main(String[] args) {
-        int phi = 22/7;
+        double phi = Math.PI;
         
         Scanner input = new Scanner(System.in);
-        System.out.print("Masukkan rusuk: ");
+        System.out.print("Masukkan Jari-jari: ");
         int rusuk = input.nextInt();
         double r = (rusuk * rusuk);
         System.out.println();
@@ -15,12 +15,12 @@ public class Soal2_2 {
 
         //Hitungan
         double Volume = phi * r * tinggi;
-        double Keliling = 2 * phi * r;
+        double Keliling = 2 * phi * rusuk * (rusuk + tinggi);
         
         
         //Output
         System.out.println();
-        System.out.println("Hasil Volume tabung: " + Volume);
+        System.out.println("Hasil Volume tabung: " + Volume + "cm3");
         System.out.println("Hasil Keliling tabung: " + Keliling);
 
         input.close();
