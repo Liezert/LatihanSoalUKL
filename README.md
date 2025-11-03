@@ -1,8 +1,8 @@
 # Latihan Soal UKL
 
-Nama: Intazar Lintang Pramanta
-Kelas: X RPL 8
-Absen: 14
+**Nama: Intazar Lintang Pramanta**
+**Kelas: X RPL 8**
+**Absen: 14**
 
 
 ## Soal  1 - Mudah
