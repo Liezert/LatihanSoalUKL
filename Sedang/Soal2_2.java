@@ -15,13 +15,13 @@ public class Soal2_2 {
 
         //Hitungan
         double Volume = phi * r * tinggi;
-        double Keliling = 2 * phi * rusuk * (rusuk + tinggi);
+        double LuasPermukaan = 2 * phi * rusuk * (rusuk + tinggi);
         
         
         //Output
         System.out.println();
         System.out.println("Hasil Volume tabung: " + Volume + "cm3");
-        System.out.println("Hasil Keliling tabung: " + Keliling);
+        System.out.println("Hasil Keliling tabung: " + LuasPermukaan + "cm2");
 
         input.close();
     }
