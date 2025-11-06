@@ -97,18 +97,33 @@ for (int i = 1; i <= angkaFaktorial; i++) {
 
 **Setelah user input, program menghitung dengan menggunakan rumus kode:**
 
+**Kode akan menjalankan fungsinya masing-masing, contoh ada di bawah ini:**
+
 ``` java
-double Volume = phi * r * tinggi;
-double LuasPermukaan = 2 * phi * rusuk * (rusuk + tinggi);
+//Rumus Volume Tabung
+public static void volumeTabung(int jari, int tinggi) {
+         double volume, PI = Math.PI;
+
+         volume = PI * jari * jari * tinggi;
+         System.out.println("Hasil Volume tabung: " + volume + "cm3");
+        }
+//Rumus Luas Permukaan Tanbung
+public static void luasPermukaanTabung(int jari, int tinggi) {
+         double luasPermukaan, PI = Math.PI;
+         
+         luasPermukaan = 2 * PI * jari * (jari + tinggi);
+         System.out.println("Hasil Keliling tabung: " + luasPermukaan + "cm2");
+        }
 ```
+
 
 > [!NOTE]
 > Phi dapat ditemukan di class java dengan menambahkan:
 > ```java
-> double phi = Math.PI;
+> double PI = Math.PI;
 > ```
 
-**Diawali dengan membuat jenis variabel `double` yang bernama `Volume` & `LuasPermukaan`, berfungsi untuk menghitung total `Volume` & `LuasPermukaan` menggunakan variabel `Phi`, `Rusuk`, dan `tinggi`.**
+**Diawali dengan membuat jenis variabel `double` yang bernama `Volume` & `LuasPermukaan`, berfungsi untuk menghitung total `Volume` & `LuasPermukaan` menggunakan variabel `PI`, `Rusuk`, dan `tinggi`.**
 
 ### Output:
 <img src=ScreenShoot\Soal2_2.png width="70%"> 
